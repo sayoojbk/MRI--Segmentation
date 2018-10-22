@@ -1,10 +1,13 @@
 This CNN model could give a test accuracy around 71% .
 This model used has 2 convolution layer with  a fully connected layer to help predict the output
 
-The CNN architecture is build on Pytorch while the dataset was first preprocessed using openCV to 
-to increase the edge detection accuracy which actually helps in increasing the accuracy of the model
-
 
 The modules used are :
   1) OpenCV       - For image preprocessing
   2) Pytorch      - For building the CNN architecture
+
+
+
+The image dataset was passed through sharpening filter which increases the possibility of edge detection
+and then passed on to a simple Convolutional Layer build on Pytorch and the model was saved to file 
+model1.ckpt
